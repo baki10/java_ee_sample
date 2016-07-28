@@ -1,0 +1,21 @@
+group 'com.bakigoal'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile("javax:javaee-api:7.0")
+}
+
+war{
+    archiveName 'cinema.war'
+}
